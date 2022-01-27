@@ -1,8 +1,9 @@
-const Button = () => {
-    return (
-      <button type="button" class="Button">Load more</button>
-    );
-  };
-  
-  export default Button;
-  
+const Button = ({ pagination }) => {
+  return (
+      <button type="button" className="Button" onClick={pagination}>
+        Load more
+      </button>
+  );
+};
+
+export default Button;

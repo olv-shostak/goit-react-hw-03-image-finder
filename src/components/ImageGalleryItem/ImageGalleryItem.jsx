@@ -1,7 +1,12 @@
-const ImageGalleryItem = () => {
+const ImageGalleryItem = ({ largeImageURL, webformatURL, onClick }) => {
   return (
-    <li class="ImageGalleryItem">
-      <img class="ImageGalleryItem-image" src="" alt="" />
+    <li className="ImageGalleryItem">
+      <img
+        src={webformatURL}
+        alt=""
+        className="ImageGalleryItem-image "
+        onClick={() => onClick(largeImageURL)}
+      />
     </li>
   );
 };
